@@ -34,8 +34,29 @@ function really (m) // this function is used to get spacific place element in st
     return m[0] // remember string are array of characters
 }
 ```
+## Arguemnts in Functions
+- is a like array 
+- you can't use array methods with it " There is a Playaround to handle this "
+```javascript
 
+  function sum () {
+    console.log(arguments.length) 
+    return 0;
+  }
+  sum(); // 0
+  sum(2,3,41,41); // 4 
 
+```
+
+# Function expression 
+```js
+var sum = function os(){
+  
+};
+sum();
+var sum = function (){};
+
+````
 # Anonymous Functions
 ```js
     // here is normal function
