@@ -28,16 +28,7 @@
     Dynamically type Language
     */ 
 ```
-# Variables Types
-- String
-- Numbers
-- boolean
-- null
-- undefined
-```js
-typeof(variableName); // show the type of the variable
 
-```
 
 
 # Numbers
@@ -67,20 +58,6 @@ let x = true
 let x = false
 ```
 
-# Logical Operator 
-```js
-|| // OR
-&& // AND
-< // Smaller Than
-> // Bigger Than
-<= // Smaller Than or Equal
->= // Bigger Than or Equal
-!= // Not Equal ?
-== // Is Equal ? in value only
-=== // Is Equal in value and data type ?
-!z // not true if z is true 
-```
-
 
 # Casting
 ```js
@@ -91,3 +68,34 @@ String(variable) // casting to string
 x.toString()
 Boolean(variable)
 ```
+# Primitive Types
+- String => 'name', "hey", `test`
+- Numbers => 2 , 2.3 , -2 , -23.23 
+- boolean => true, false  , 0 ,1 
+- null => the variable is empty 
+- NAN
+- sympol
+- undefined => i don't know what inside the variable 
+```js
+typeof(variableName); // show the type of the variable
+```
+
+# Non Primitive Types 
+- Objects 
+- Functions
+- Arrays 
+- Dates
+- Keyed Collections 
+  - Maps
+  - Weak Maps
+  - Sets 
+  - Weak Sets
+ 
+# Another Classification 
+- Mutable 
+  > You can change a part of the value 
+    objects , arrays 
+    
+- Immutable
+  > The value is a hole mass 
+    number , string , boolean 

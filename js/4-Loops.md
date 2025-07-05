@@ -86,3 +86,17 @@ function divideByThree(arr)
 }
 divideByThree(number)
 ```
+
+# Loop Naming 
+
+```js
+outerLoop:
+for ( let i = 0 ; i < 10 ; i++ ) {
+  innerLoop:
+  for ( let x = 0 ; x < 5 ; x++ ){
+    console.log("hello " + x);
+     if(x == 0) break outerLoop 
+       else continue;
+    }
+}
+```
