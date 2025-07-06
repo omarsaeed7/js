@@ -1,19 +1,20 @@
 # Objects
 
 ```js
-let person={ // Like in C++ Classes  , here we seperate between variables or key by comma . and function to
-    fName:"omar", // This Called Key "Fname" , Key Value "Omar"
-    lName:'Saeed',
-    age:23,
-    favFood:"No Suger",
-    title:null
-}
-console.log(person['fName']) // print the value of the key
-console.log(person['lName'])
+let person = {
+  // Like in C++ Classes  , here we seperate between variables or key by comma . and function to
+  fName: "omar", // This Called Key "Fname" , Key Value "Omar"
+  lName: "Saeed",
+  age: 23,
+  favFood: "No Suger",
+  title: null,
+};
+console.log(person["fName"]); // print the value of the key
+console.log(person["lName"]);
 // Or
 // this way is used mostly with functions inside the object
-person.age // print the value of the key
-person.fName
+person.age; // print the value of the key
+person.fName;
 ```
 
 ## Object & Functions
@@ -80,49 +81,53 @@ function addObj(obj,key,newitem){ // this function change the value of the key w
 }
 addObje(objectname,"keyname","the new Value") // the keyname should be in double quotation
 ```
+
 # Object And Factor Function
 
 ```js
 // you can remove the object value if it object got the same name like the funcion parameters .
-function genBook(name,author){
-let book={
-	name,
-	author
-};
-return book;
-// or 
-return {name:name,author:author};
+function genBook(name, author) {
+  let book = {
+    name,
+    author,
+  };
+  return book;
+  // or
+  return { name: name, author: author };
 }
-
 ```
-# Nested Objects 
+
+# Nested Objects
+
 ```js
-let student =[
-        { 
-            name:{
-                firstname: "",
-                lastname:""
-            },
-            age:22     
-        },
-    
-    ] 
+let student = [
+  {
+    name: {
+      firstname: "",
+      lastname: "",
+    },
+    age: 22,
+  },
+];
 ```
 
 # Destructuring Assignment
+
 ```js
 // let name =student.name
 // let age = student.age
 // this gonna take the name and the age from object if they are the same names
-let {name, age}=student
-console.log(name,age)
+let { name, age } = student;
+console.log(name, age);
 ```
 
-# Delete Property In Object  
-```js
+# Delete Property In Object
 
-let obj1 = { name: "omar",
-		age:"23",
-}
+```js
+let obj1 = {
+  name: "omar",
+  age: "23",
+};
 delete obj1.name;
 console.log(obj1);
+```

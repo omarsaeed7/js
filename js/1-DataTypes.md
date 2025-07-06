@@ -1,7 +1,15 @@
 # Var , Let, Const
 
 ```js
-    // var is the old way to declare the variables also var didn't take care about scope
+    // var is the old way to declare the variables also var didn't take care about scope but it care about the function scope 
+    
+    function test (x = 10){
+      if (x < 12) {
+      var y = 20;
+      let z = 30;
+      }
+      console.log(y,z); // you can't see the z but you can see the y 
+    }
     
     // now we use let
     let x =20
