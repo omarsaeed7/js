@@ -1,11 +1,13 @@
 # String
 
+# Backtich Or Template Literals 
 - when we type 
   
   - `half of 100 is ${100 / 2}` 
   - the result is -> half of 100 is 50
   - ${} make a computaion and return a string 
-
+  - let y = 20;
+  - let x = ` what is ${y}` // what is 20
 ```js
 // Methods
 var title =" hello world"

@@ -131,3 +131,45 @@ let obj1 = {
 delete obj1.name;
 console.log(obj1);
 ```
+
+# Check object existance
+```js
+let obj1 = {
+  name : "what"
+}
+console.log("name" in obj1); // true 
+console.log("age" in obj1); // false
+```
+
+# Comparing Objects 
+
+> in objects the comparing the address not the value
+```js
+let obj1 = {  
+  name : 'omar',
+  age : 26
+}
+let obj2 = {  
+  name : 'omar',
+  age : 26
+}
+// Pass By reference
+let obj3 = obj2;
+
+console.log(obj1 == obj2); // false
+console.log(obj3 == obj2) // true
+
+```
+
+# Create Constructor
+
+```js
+
+function Person (name, age) {
+  this.name = name;
+  this.age = age;
+}
+let obj1 = new Person("omar", 26);
+let obj2 = new Person("what", 23);
+console.log(obj1,obj2);
+```

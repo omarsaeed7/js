@@ -1,12 +1,13 @@
-
-console.log(test); // this will work 
-// console.log(num); // this will not work cause let 
-dodge(); // this will work 
-// myFun(); // this not going to work cause the hositing just take the variable name not the value inside it 
-var test = 30;
-let num = 20;
-
-function dodge (){
-  console.log("hello");
+function fun(x, y){
+  console.log(x, y);
 }
-let myFun = () => 20;
+fun( y = 18, x = 20);// 18 20 expected 20 18 
+
+function fun2 ( obj ){
+  let { x , y } = obj;
+  console.log(x ,y)
+}
+fun2( {
+  y : 30,
+  x : 50
+}); // 50 30 as expected 

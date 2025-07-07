@@ -174,7 +174,26 @@ function jsonFormat(text){
 format("what is the cost of lies " , jsonFormat)
 //reuslt : {"text" : "what is the cost of lies "}
 
+```
 
+# Named parameters
+> js doesn't support named parameters by default 
+```js 
+function fun1 ( x, y ){
+  console.log(x ,y)
+}
+fun1(y = 18, x = 20);// 18 20 expected 20 18 
+function fun2 ( obj ){
+  let x = obj.x;
+  let y = obj.y;
+  // or 
+  // let { x , y } = obj;
+  console.log(x ,y)
+}
+fun2( {
+  y = 30,
+  x = 50
+}); // 50 30 as expected 
 
 
 ```

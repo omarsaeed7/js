@@ -7,9 +7,17 @@
 }
 
 // shortcut for for
-// x here is index number 
+// x here is index number or name 
 for( let x in string){
     console.log(string[x])
+}
+let obj = {
+  name : 'omar',
+  age: 25
+}
+
+for (let index in obj) {
+  console.log(index + " " + obj[index]);
 }
 let string=[1,3,4,"c",true]
 // x here is " Value of index "
